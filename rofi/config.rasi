@@ -1,0 +1,47 @@
+/**
+ * ROFI Color theme
+ * User: Qball
+ * Copyright: Dave Davenport
+ */
+configuration {
+	modes: "drun,window";
+}
+* {
+    background-color:      Black;
+    border-color:          Black;
+    text-color:           Blue;
+    font:            "Hack-Italic-Nerd-Front 6";
+}
+window {
+    anchor:     north;
+    location:   north;
+    width:      100%;
+    padding:    1px;
+    children:   [ horibox ];
+}
+horibox {
+    orientation: horizontal;
+    children:   [ prompt, entry, listview ];
+}
+listview {
+    layout:     horizontal;
+    spacing:    1px;
+    lines:      100;
+}
+entry {
+    expand:     false;
+    width:      1em;
+}
+element {
+    padding: 0px 1px;
+}
+element selected {
+    background-color: SteelBlue;
+}
+
+element-text, element-icon {
+  background-color: inherit;
+  text-color: inherit;
+}
+//@theme "arc-dark"
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
