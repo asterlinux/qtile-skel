@@ -1,0 +1,18 @@
+#!/bin/sh
+
+
+case "$(echo -e "Shutdown\nRestart\nLogout\nSuspend\nLock\nHibernate" | dmenu \
+    -nb "${COLOR_BACKGROUND:-#1a1826}" \
+    -nf "${COLOR_DEFAULT:-#6e6c7e}" \
+    -sf "${COLOR_HIGHLIGHT:-#000000}" \
+    -sb "#96cdfb" \
+    -fn "Andika-10" \
+     -i -p \
+    "Power:" -l 6)" in
+        Shutdown) exec systemctl poweroff;;
+        Restart) exec systemctl reboot;;
+        Logout) kill -HUP $XDG_SESSION_PID;;
+        Suspend) exec systemctl suspend;;
+        Lock) exec betterlockscreen --lock blur;;
+        Hibernate) exec systemctl hibernate;;
+esac
