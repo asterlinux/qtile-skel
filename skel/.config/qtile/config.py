@@ -130,7 +130,7 @@ layout_theme = {"border_width": 2,
 layouts = [
     #layout.Columns(border_focus_stack=catppuccin["blue"],border_normal_stck=catppuccin["black"],**layout_theme),
     # Try more layouts by unleashing below layouts.
-    layout.Stack(num_stacks=2,**layout_theme),
+    # layout.Stack(num_stacks=2,**layout_theme),
     layout.Max(**layout_theme),
     layout.Bsp(**layout_theme),
     # layout.Matrix(),
