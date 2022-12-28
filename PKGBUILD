@@ -4,7 +4,7 @@
 pkgname=("asl-skel")
 _destname="/etc"
 pkgver=1
-pkgrel=2
+pkgrel=3
 pkgdesc="aster linux skel packge"
 arch=("x86_64")
 url="https://github.com/asterlinux/AsterSKEL"
