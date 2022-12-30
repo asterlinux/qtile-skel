@@ -90,7 +90,8 @@ keys = [
     Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle"),desc="Mute Volume"),
     Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -c 0 sset Master 10- unmute"),desc="Volume Up"),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -c 0 sset Master 10+ unmute"),desc="Volome Down"),
-
+  
+    Key([mod, "shift"], "a", lazy.spawn("dmenu_run"), desc="dmenu"),
 
 
 
