@@ -1,5 +1,3 @@
-# If it is unknown, then please put 'unknown'.
-
 #Maintainer: Sahan Rasanjana <sahan.user@gmail.com>
 pkgname=("asl-skel")
 _destname="/etc"
