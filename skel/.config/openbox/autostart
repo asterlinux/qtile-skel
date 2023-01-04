@@ -1,7 +1,0 @@
-#!/bin/bash 
-
-picom &
-
-latte-dock &
-nitrogen --restore
-
