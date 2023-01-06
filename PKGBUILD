@@ -1,8 +1,8 @@
 #Maintainer: Sahan Rasanjana <sahan.user@gmail.com>
-pkgname=("asl-skel")
+pkgname=("aster-qtile-skel")
 _destname="/etc"
 pkgver=1
-pkgrel=5
+pkgrel=6
 pkgdesc="aster linux skel packge"
 arch=("x86_64")
 url="https://github.com/asterlinux/AsterSKEL"
